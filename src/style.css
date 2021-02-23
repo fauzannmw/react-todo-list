@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#root,
+.App {
+    width: 100%;
+    min-height: 100vh;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 130);
+    border-bottom: 0.1rem black solid;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+input {
+    margin: .4rem;
+}
+
+.nav-item {
+    user-select: none;
+    transition: 0.4s;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.list {
+    padding: 1rem;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.6rem;
+    width: 96%;
+    padding: 0.5em;
+    margin-bottom: 1rem;
+    background-color: white;
+    box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.589);
+
+}
+
+.delete-item {
+    background-color: rgb(255, 126, 117);
+    border-radius: 5px;
+    padding: 0.2em;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.add-item {
+    border: none;
+    padding: 1em;
+    font-size: 12px;
+    background-color: rgb(255, 255, 130);
+    border-radius: 5px;
+}
+
+.add-item:hover {
+    cursor: pointer;
+    user-select: none;
+}
+
+#fill-item {
+    padding: 0.2em;
+    font-size: 16px;
+    height: 100%;
+}
+
+.new-item {
+    margin-top: 1rem;
+    display: flex;
+}
+
+button {
+    padding: .5em;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-right: 1rem;
+}
+.completed{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.452);
+}
